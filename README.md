@@ -100,7 +100,10 @@ Marrying medical classification with artificial intelligence is a fascinating en
 ## References
 
 Brownlee, Jason. How to Visualize Filters and Feature Maps in Convolutional Neural Networks, https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/.
+
 Cohen, Joseph Paul. “Chest X-ray dataset.” https://github.com/ieee8023/covid-chestxray-dataset.
+
 Mooney, Paul. “Chest X-ray Images: Pneumonia.” https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia.
+
 Rosebrock, Adrian. “Detecting COVID-19 in X-ray images with Keras, TensorFlow, and Deep Learning.” https://www.pyimagesearch.com/2020/03/16/detecting-covid-19-in-x-ray-images-with-keras-tensorflow-and-deep-learning/.
 
