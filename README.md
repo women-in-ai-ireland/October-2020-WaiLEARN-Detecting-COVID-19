@@ -1,6 +1,6 @@
-## Deep Learning for detecting COVID-19 using Chest X-Ray Images
+# Deep Learning for detecting COVID-19 using Chest X-Ray Images
 
-# Noreen Lenihan, Meghana Rathi, Buvana Ganesh
+## Noreen Lenihan, Meghana Rathi, Buvana Ganesh
 Women in Artificial Intelligence Ireland
 Acknowledgement: We would like to acknowledge WAILearn from WAI Ireland for providing the opportunity to collaborate on the project over the months of October and November 2020. 
 
@@ -11,20 +11,20 @@ We leveraged an open dataset from (Cohen) by Joseph Paul Cohen. This dataset was
 The metadata has 30 descriptive columns available on each of the cases, for 472 unique patients. A high-level overview of some summary statistics of the numeric columns is shown below.
 
 
-# Labels
+## Labels
 The current dataset contains the following labels as diagnosis. 
 
 As seen from the above image showing the breakdown of classes, there are 83 records with a ‘todo’ label, 22 records with a label of ‘No Finding’ and 1 record with an ‘Unknown’ label, implying that the condition is unknown for these patients.
 We performed some fundamental data analysis of the metadata. 
 
-# COVID to Non-COVID cases
+## COVID to Non-COVID cases
 In this dataset, when the undefined cases are removed, we are left with 584 cases of COVID-19 and 260 cases of non-COVID outcomes.
 
-# COVID-19 by Gender
+## COVID-19 by Gender
 If we look into the breakdown of cases across gender, there is a slightly higher incidence among males, with almost double the number of males being diagnosed with COVID-19 compared to females.
 
 
-# Age Distribution of Patients
+## Age Distribution of Patients
 
 
 We can observe from the distribution plot below, that the largest density of patients are in the older age profiles, between 50 and 60 years of age, with a peak between 70 and  80 year olds.
@@ -34,7 +34,7 @@ A further breakdown of the age distribution by COVID/Non-COVID diagnosis shows a
 
 In fact, the mean age for non-COVID patients presenting was 49 years old, and for COVID-positive patients it was 57 years of age.
 
-# Offset for COVID and Non-COVID presentation
+## Offset for COVID and Non-COVID presentation
 
 We can deduce that patients who have a COVID-positive diagnosis presented on average 4 days later at a hospital, whereas it took non-COVID patients 8 days to present. This could potentially be due to the fact that COVID-positive patients had more severe symptoms and thus were admitted to hospital sooner.
 Survival Rates for COVID and Non-COVID patients
@@ -90,13 +90,13 @@ We first load our previously trained model(covid-19 vs normal) and a single inpu
 We can see in the above feature maps the different parts of the x-ray image that were preserved and detected by our model to make the final decision of whether the individual has covid-19 or is healthy. (Brownlee)
 
 
-# Conclusion
+## Conclusion
 
 Although achieving very high accuracy using CNNs for distinguishing between COVID and healthy X-ray images, we must remember that we can’t rely on X-ray imagery alone for COVID diagnosis. However, it is a useful starting point and something that could assist medical teams in formulating a diagnosis using this tool. Through collaborating on this project together, it has given us a renewed optimism for solving such high-stake real-world problems by seeing researchers collect and openly share data allowing researchers to team up across the world to solve common problems. 
 Relatedly, we learned about the importance of model explanabilty in such a domain - it is critical to enable trust and give confidence to end users in this application domain, where the cost of a false positive is much lower than a false negative. We learned some pitfalls in data preparation where not shuffling images appropriately in the training dataset lead to suboptimal outcomes. Overall, ongoing and significant data collection and coordination of researchers will lead to larger training data and improved accuracy. 
 Marrying medical classification with artificial intelligence is a fascinating endeavour and as a WAILearn group, we all learned something new in the realm of CNNs and COVID. We are grateful to have gotten to know each other in these strange times through a common interest in the fascinating world of AI and its vast potential in fields like medical diagnosis. 
 
-# References
+## References
 
 Brownlee, Jason. How to Visualize Filters and Feature Maps in Convolutional Neural Networks, https://machinelearningmastery.com/how-to-visualize-filters-and-feature-maps-in-convolutional-neural-networks/.
 Cohen, Joseph Paul. “Chest X-ray dataset.” https://github.com/ieee8023/covid-chestxray-dataset.
