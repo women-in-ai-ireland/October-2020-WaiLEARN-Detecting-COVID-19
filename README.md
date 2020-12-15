@@ -1,8 +1,9 @@
 # Deep Learning for detecting COVID-19 using Chest X-Ray Images
 
-## Noreen Lenihan, Meghana Rathi, Buvana Ganesh
-Women in Artificial Intelligence Ireland
-Acknowledgement: We would like to acknowledge WAILearn from WAI Ireland for providing the opportunity to collaborate on the project over the months of October and November 2020. 
+## Noreen Lenihan, Meghana Rathi, Buvana Ganesh 
+## Women in Artificial Intelligence Ireland
+
+We would like to acknowledge WAILearn from WAI Ireland for providing the opportunity to collaborate on the project over the months of October and November 2020. 
 
 # Background
 Have you had a COVID-19 test or heard from someone about it and wondered if there was another way to test? If something already available in hospitals can be re-utilised for COVID-19 testing, then it is possible to test on a larger scale. In this project, we look at chest X-rays and check their viability for detecting Covid-19. Given the unanimous success of deep learning for image classification, we investigated the potential of Convolutional Neural Networks for differentiating between COVID and non-COVID diagnosis in X-rays, in particular, distinguishing between COVID and other pneumonia types, as well as between COVID and healthy patients. 
