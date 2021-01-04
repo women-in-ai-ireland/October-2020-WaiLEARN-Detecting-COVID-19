@@ -14,7 +14,7 @@ The metadata has 30 descriptive columns available on each of the cases, for 472 
 
 ## Labels
 The current dataset contains the following labels as diagnosis. 
-![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/1.png)
+![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/1.png)
 
 As seen from the above image showing the breakdown of classes, there are 83 records with a ‘todo’ label, 22 records with a label of ‘No Finding’ and 1 record with an ‘Unknown’ label, implying that the condition is unknown for these patients.
 We performed some fundamental data analysis of the metadata. 
@@ -31,7 +31,7 @@ If we look into the breakdown of cases across gender, there is a slightly higher
 
 We can observe from the distribution plot below, that the largest density of patients are in the older age profiles, between 50 and 60 years of age, with a peak between 70 and  80 year olds.A further breakdown of the age distribution by COVID/Non-COVID diagnosis shows a slightly larger density among the older age profiles for COVID-positive patients.
 In fact, the mean age for non-COVID patients presenting was 49 years old, and for COVID-positive patients it was 57 years of age.
-![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/2.png)
+![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/2.png)
 
 ## Offset for COVID and Non-COVID presentation
 We can deduce that patients who have a COVID-positive diagnosis presented on average 4 days later at a hospital, whereas it took non-COVID patients 8 days to present. This could potentially be due to the fact that COVID-positive patients had more severe symptoms and thus were admitted to hospital sooner.
@@ -50,7 +50,7 @@ Once the data gathering step was complete we decided to implement a VGG-16 model
 Next we split the shuffled image data and labels by allocating 80% of the data to training and 20% to testing as seen in the code snippet below.
 
 We then instantiated the VGG16 network with weights pre-trained on ImageNet but constructed a new fully-connected layer head and froze the weights of the VGG16 so that only the fully-connected layer gets trained. The way this was done can be seen in the code below.
-![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/3.png)
+![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/3.png)
 We use Adam as the optimiser and binary cross-entropy as we only have 2 classes to classify, covid-19 positive or healthy, to compile our model. 
 This model was trained and we achieved approximately 98% accuracy on our validation set from this model.
 Note: The work in this section was based of this tutorial Link (Rosebrock)
@@ -68,7 +68,7 @@ We used the LIME package on 1 sample of a COVID-positive image and produced the 
 
 For further details on applying the LIME package to these images, refer to the Jupyter Notebook here. 
 
-![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/4.png)
+![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/4.png)
 ## Activation Maps
 
 Now that we had a working image classification model that can quite accurately predict from an x-ray image of the lungs if a person has covid-19, we wanted to see the inner workings of our model and understand how it is able to detect covid-19. We decided to use keras library to visualise feature maps of our previously trained model.
@@ -78,8 +78,7 @@ Feature maps essentially capture the result of applying filters to the input ima
 
 We first load our previously trained model(covid-19 vs normal) and a single input image we wish to run through our model and see the feature maps for. This input image is converted to a numPy array and pre-processed so that it is scaled appropriately for the VGG model. Lastly we used the model.predict() function to obtain the feature maps, some of which we can see below, for our input image
 
-
-![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/5.png)
+![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/5.png)
 We can see in the above feature maps the different parts of the x-ray image that were preserved and detected by our model to make the final decision of whether the individual has covid-19 or is healthy. (Brownlee)
 
 
