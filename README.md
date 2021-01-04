@@ -72,7 +72,7 @@ LIME is a library with rich features for exploring why neural networks take cert
 We used the LIME package on 1 sample of a COVID-positive image and produced the following results. In the top left, we see the original image. In the top right, we delineate the pieces of the image that contributed to the COVID classification using the CNN. In the bottom left, we again see these areas that support a COVID classification in the overall image. Finally, in the bottom right, we can see the parts of the X-ray image that did not support a COVID-positive classification.
 For further details on applying the LIME package to these images, refer to the Jupyter Notebook. 
 
-![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/6-lime.png)
+![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/6 lime.png)
 
 ## Activation Maps
 
