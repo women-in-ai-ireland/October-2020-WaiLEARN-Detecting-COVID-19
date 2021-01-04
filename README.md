@@ -26,7 +26,10 @@ When we look into the breakdown of cases across *gender*, there is a slightly hi
 
 Looking at the *offset*, patients who have a COVID-positive diagnosis presented on average 4 days later at a hospital, whereas it took non-COVID patients 8 days to present. This could potentially be due to the fact that COVID-positive patients had more severe symptoms and thus were admitted to hospital sooner.
 
-Finally, in terms of *survival* for those diagnosed with COVID and other Non-COVID conditions, we observe a larger number of COVID-positive patients who do not survive, compared to non-COVID patients. However, there are only 120 values for ‘survival’ in the cleaned dataset, with the remaining outcomes unknown.
+Finally, in terms of *survival* for those diagnosed with COVID and other Non-COVID conditions, we observe a larger number of COVID-positive patients who do not survive, compared to non-COVID patients. However, there are only 120 values for ‘survival’ in the cleaned dataset, with the remaining outcomes unknown. 
+
+The notebooks ![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/Notebooks/Metadata%20visualisation.ipynb) and ![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/Notebooks/Covid%20vs%20Pneumonia%20classification%20with%20layer%20visualisation%20and%20decode%20predictions.ipynb)
+give a detailed visualisations on the metadata.
 
 ### Age Distribution of Patients
 
@@ -45,9 +48,12 @@ Once the data gathering step was complete we decided to implement a *VGG-16 mode
 The first step in implementing the model was to initialise the learning rate, epochs and batch size which we found to be 1e-3, 7 and 8 respectively to give optimum results.
 Next we split the shuffled image data and labels by allocating 80% of the data to training and 20% to testing as seen in the code snippet below.
 
-We then instantiated the VGG16 network with weights pre-trained on ImageNet but constructed a new fully-connected layer head and froze the weights of the VGG16 so that only the fully-connected layer gets trained. The way this was done can be seen in the code below.
 
 ![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/4.png)
+
+We then instantiated the VGG16 network with weights pre-trained on ImageNet but constructed a new fully-connected layer head and froze the weights of the VGG16 so that only the fully-connected layer gets trained. The way this was done can be seen in the code below.
+
+![alt text](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/7.png)
 
 We use *Adam* as the optimiser and binary cross-entropy as we only have 2 classes to classify, covid-19 positive or healthy, to compile our model. 
 This model was trained and we achieved approximately 98% accuracy on our validation set from this model.
