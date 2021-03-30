@@ -18,7 +18,7 @@ The current dataset contains the following labels as diagnosis.
 As seen from the above image showing the breakdown of classes, there are 83 records with a ‘todo’ label, 22 records with a label of ‘No Finding’ and 1 record with an ‘Unknown’ label, implying that the condition is unknown for these patients.
 We performed some fundamental data analysis of the metadata and drew insights about what was available for further analysis.
 
-![Image](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/2.png)
+![Image](https://github.com/women-in-ai-ireland/October-2020-WaiLEARN-003/blob/master/2.png?raw=true)
 
 ### COVID to Non-COVID cases:
 If the undefined cases are removed, we are left with *584 cases of COVID-19* and 260 cases of non-COVID outcomes.
